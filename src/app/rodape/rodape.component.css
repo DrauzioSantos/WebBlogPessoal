@@ -1,16 +1,16 @@
 ul.social-network{
     list-style: none;
-    padding: 0;
+    padding: 5%;
 
 }
 
 ul.social-network li{
-    display: inline;
+    display: inline-block;
     margin: 0;
-    padding: 5%;
+    padding: 0%;
 }
 
-.fa{
+.fa {
     font-size: 35pt;
     color: white;
     padding: 10%;
