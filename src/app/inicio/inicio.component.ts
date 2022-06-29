@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import { AuthService } from '../service/auth.service';
+import { TemaService } from '../service/tema.service';
 
 @Component({
   selector: 'app-inicio',
@@ -10,7 +12,12 @@ import { environment } from 'src/environments/environment.prod';
 export class InicioComponent implements OnInit {
 
   constructor(
-    private router: Router
+    private router: Router,
+    private postagemService: PostagemService,
+    private temaService: TemaService,
+    private authService: AuthService,
+    private alerta
+
   ) { }
 
     ngOnInit() {
@@ -20,4 +27,7 @@ export class InicioComponent implements OnInit {
       }
   }
 
+  publicar(){
+
+  }
 }
